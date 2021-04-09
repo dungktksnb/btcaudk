@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" id="so tháng" > <button onclick="lamgido()" >tính số ngày</button>
+</div>
+</body>
+</html>
+<script>
+    function lamgido(){
+        let number = +document.getElementById("so tháng").value;
+
+        switch (number ) {
+
+            case 2:
+                alert(number + "tháng có 28 hoặc 29 ngày");
+                break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert(number + "30 ngày");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert(number + "tháng có 31 ngày");
+                break;
+            default :
+                alert("số bạn nhập không phải các tháng");
+
+        }
+
+
+
+    }
+</script>
